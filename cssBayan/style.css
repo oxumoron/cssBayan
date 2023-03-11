@@ -111,6 +111,12 @@ input:checked ~ .accordeon__item-top .icon-plus {
   .accordeon:hover {
     color: #000;
   }
+}
+
+@media (min-width: 1920px) {
+  body {
+    font-size: 1.5em;
+  }
 
   input:hover ~ .accordeon__item-img {
     display: block;
@@ -124,11 +130,5 @@ input:checked ~ .accordeon__item-top .icon-plus {
 
   input:hover ~ .accordeon__item-top .icon-plus {
     display: none;
-  }
-}
-
-@media (min-width: 1920px) {
-  body {
-    font-size: 1.5em;
   }
 }
