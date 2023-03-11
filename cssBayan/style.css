@@ -78,6 +78,7 @@ input[type="checkbox"] {
 
 input:checked ~ .accordeon__item-img {
   display: block;
+  animation: show 2s;
 }
 
 input:checked ~ .accordeon__item-top {
@@ -86,8 +87,18 @@ input:checked ~ .accordeon__item-top {
 
 input:checked ~ .accordeon__item-top .icon-cross {
   display: block;
+  animation: show 2s;
 }
 
 input:checked ~ .accordeon__item-top .icon-plus {
   display: none;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
