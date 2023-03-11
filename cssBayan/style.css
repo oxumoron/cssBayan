@@ -102,3 +102,32 @@ input:checked ~ .accordeon__item-top .icon-plus {
     opacity: 1;
   }
 }
+
+@media (min-width: 820px) {
+  body {
+    font-size: 1.25em;
+  }
+  .accordeon:hover {
+    color: #000;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    font-size: 1.5em;
+  }
+
+  input:hover ~ .accordeon__item-img {
+    display: block;
+    animation: show 2s;
+  }
+
+  input:hover ~ .accordeon__item-top .icon-cross {
+    display: block;
+    animation: show 2s;
+  }
+
+  input:hover ~ .accordeon__item-top .icon-plus {
+    display: none;
+  }
+}
