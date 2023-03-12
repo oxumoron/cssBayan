@@ -103,11 +103,7 @@ input:checked ~ .accordeon__item-top .icon-plus {
   }
 }
 
-@media (min-width: 820px) {
-  body {
-    font-size: 1.25em;
-  }
-
+@media (hover: hover) {
   .accordeon:hover {
     color: #000;
   }
@@ -124,6 +120,12 @@ input:checked ~ .accordeon__item-top .icon-plus {
 
   input:hover ~ .accordeon__item-top .icon-plus {
     display: none;
+  }
+}
+
+@media (min-width: 820px) {
+  body {
+    font-size: 1.25em;
   }
 }
 
