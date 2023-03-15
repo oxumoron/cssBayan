@@ -1,0 +1,136 @@
+body {
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: 900;
+  color: blue;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+label {
+  cursor: pointer;
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.icon {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.title {
+  color: #000;
+}
+
+.main {
+  text-align: center;
+}
+
+.accordeon {
+  margin: 0 auto;
+  max-width: max-content;
+  transition: all 0.4s;
+}
+
+.accordeon__item {
+  border-top: 0.1rem solid #777;
+  padding-bottom: 1rem;
+}
+
+.accordeon__item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accordeon__item-img {
+  margin: 0 auto;
+  display: none;
+}
+
+.accordeon__item-text {
+  padding: 1rem 0;
+}
+
+.icon-cross {
+  display: none;
+}
+
+input:checked ~ .accordeon__item-img {
+  display: block;
+  animation: show 2s;
+}
+
+input:checked ~ .accordeon__item-top {
+  color: #000;
+}
+
+input:checked ~ .accordeon__item-top .icon-cross {
+  display: block;
+  animation: show 2s;
+}
+
+input:checked ~ .accordeon__item-top .icon-plus {
+  display: none;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (hover: hover) {
+  .accordeon:hover {
+    color: #000;
+  }
+
+  input:hover ~ .accordeon__item-img {
+    display: block;
+    animation: show 2s;
+  }
+
+  input:hover ~ .accordeon__item-top .icon-cross {
+    display: block;
+    animation: show 2s;
+  }
+
+  input:hover ~ .accordeon__item-top .icon-plus {
+    display: none;
+  }
+}
+
+@media (min-width: 820px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
